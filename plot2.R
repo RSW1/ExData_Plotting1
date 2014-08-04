@@ -9,7 +9,7 @@ weekday <- seq(0,2880,1440)
 weekday_name <- c("Thu","Fri","Sat")
 
 ## plot line graph  into a png file
-png(file = "plot2.png", width = 480, height = 480, units = "px")
+png(file = "plot2.png", width = 480, height = 480, units = "px", bg = "transparent")
 plot(data_red$Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)", xaxt = "n")
 axis(1, at = weekday, labels = weekday_name)
 dev.off()

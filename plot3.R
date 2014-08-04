@@ -10,7 +10,7 @@ weekday_name <- c("Thu","Fri","Sat")
 line_col = c("black","red","blue")
 
 ## plot line graph  into a png file
-png(file = "plot3.png", width = 480, height = 480, units = "px")
+png(file = "plot3.png", width = 480, height = 480, units = "px", bg = "transparent")
 plot(data_red$Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering",xaxt = "n", col = line_col[1])
 axis(1, at = weekday, labels = weekday_name)
 lines(data_red$Sub_metering_2, type = "l", col = line_col[2])

@@ -10,7 +10,7 @@ weekday_name <- c("Thu","Fri","Sat")
 line_col = c("black","red","blue")
 
 ## plot 2x2 graphs into a png file
-png(file = "plot4.png", width = 480, height = 480, units = "px")
+png(file = "plot4.png", width = 480, height = 480, units = "px", bg = "transparent")
 par(mfrow = c(2, 2))
 with(data_red, {
   plot(Global_active_power, type = "l", xlab = "", ylab = "Global Active Power (kilowatts)", xaxt = "n")
